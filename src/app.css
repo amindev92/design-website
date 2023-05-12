@@ -13,6 +13,7 @@ body {
     background-color: var(--bg-color);
     font-family: var(--font-family);
     font-size: 1.4rem;
+    overflow-x: hidden;
 }
 
 
@@ -45,7 +46,7 @@ a {
 }
 
 .gradiant--text {
-    background-color: var(--gradiant-text);
+    background: var(--gradiant-text);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

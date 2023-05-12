@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+}
+
+.header__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header__content-title {
+    font-family: var(--font-family);
+    font-size: 5.8rem;
+    font-weight: bold;
+    line-height: 5.6rem;
+    margin-bottom: 2rem;
+}
+
+.header__content-caption {
+    font-family: var(--font-family);
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.header__content-input {
+    display: flex;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.header__content-input input {
+    flex: 2;
+    width: 100%;
+    outline: none;
+    background-color: var(--footer-color);
+    min-height: 4rem;
+    border: var(--footer-color);
+    font-family: var(--font-family);
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.header__content-input button {
+    flex: 0.5;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: var(--color-subtext);
+    font-family: var(--font-family);
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.header__content-people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content-people p {
+    margin-left: 2rem;
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.header__image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header__image img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    .header__content-title {
+        min-width: 47rem;
+    }
+
+    .header__image img {
+        width: 60%;
+        height: 60%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    .header__content-title {
+        min-width: 40rem;
+    }
+
+    .header__content-people {
+        flex-direction: column;
+    }
+
+    .header__content-people p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
