@@ -1,0 +1,140 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.navbar__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+
+.navbar__links-logo img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.navbar__links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+}
+
+.navbar__links-container p {
+    color: #fff;
+    font-family: var(--font-family);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-right: 4rem;
+}
+
+.navbar__signs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar__signs-signin {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.navbar__signs-signup {
+    border: none;
+    background-color: var(--color-subtext);
+    border-radius: 1rem;
+    height: 4rem;
+    width: 8rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
+.navbar__menu {
+    display: none;
+    position: relative;
+}
+
+.navbar__menu svg {
+    cursor: pointer;
+}
+
+.navbar__menu-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    min-width: 20rem;
+    flex-direction: column;
+    background-color: var(--footer-color);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.navbar__menu-list p {
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.navbar__menu-link-signs {
+    display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+
+    .navbar__links-container {
+        display: none;
+    }
+
+    .navbar__signs {
+        margin-right: 2rem;
+    }
+
+    .navbar__menu {
+        display: flex;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    .navbar__signs {
+        display: none;
+    }
+
+    .navbar__menu-link-signs {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+    .navbar__menu-signin {
+        cursor: pointer;
+    }
+
+    .navbar__menu-signup {
+        background-color: var(--color-subtext);
+        border: none;
+        outline: none;
+        color: #fff;
+        width: 6rem;
+        height: 3rem;
+        border-radius: 1rem;
+    }
+
+}
