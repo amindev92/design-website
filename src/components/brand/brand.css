@@ -1,0 +1,24 @@
+.our-technology {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15rem;
+}
+
+.our-technology__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-width: 5rem;
+    max-width: 8rem;
+
+
+}
+
+.our-technology__item img {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(80%)
+}
