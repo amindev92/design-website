@@ -1,0 +1,31 @@
+.cta {
+    background: linear-gradient(100deg, rgba(174, 103, 175, 1) 30%, rgba(255, 138, 113, 1) 60%);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta__title p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.cta__title h4 {
+    font-size: 1.8rem;
+    color: var(--blog-color);
+}
+
+.cta__button button {
+    background-color: var(--bg-color);
+    outline: none;
+    border: none;
+    width: 8rem;
+    height: 4rem;
+    color: #fff;
+    border-radius: 1rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
