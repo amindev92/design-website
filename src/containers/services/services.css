@@ -1,0 +1,50 @@
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services__image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.services__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.services__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.services__content span {
+    display: block;
+    font-size: 2rem;
+    color: #71E5FF;
+    margin-bottom: 1rem;
+}
+
+.services__content h3 {
+    font-size: 3.4rem;
+    margin-bottom: 1rem;
+}
+
+.services__content p {
+    max-width: 48rem;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    .services {
+        flex-direction: column;
+    }
+}
