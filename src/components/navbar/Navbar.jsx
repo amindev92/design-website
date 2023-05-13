@@ -9,7 +9,7 @@ const Menu = () => (
             <a href='#home'>Home</a>
         </p>
         <p >
-            <a href='#whs'>Services</a>
+            <a href='#whs'>What is React?</a>
         </p>
         <p >
             <a href='#features'>Features</a>

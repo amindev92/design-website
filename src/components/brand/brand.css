@@ -3,17 +3,18 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15rem;
+    gap: 5rem;
 }
 
 .our-technology__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    flex-grow: 1;
     min-width: 5rem;
     max-width: 8rem;
-
+    margin-left: 5rem;
+    margin-right: 5rem;
 
 }
 

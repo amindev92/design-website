@@ -1,0 +1,78 @@
+.whs-react {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* .whs-react__feature {
+    display: flex;
+} */
+
+.whs-react__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.whs-react__heading-title {
+    font-family: var(--font-family);
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+.whs-react__heading p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.whs-react__feature-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.whs-react__feature-container .feature-container {
+    flex-direction: column;
+    flex: 1;
+    min-width: 26rem;
+    /* display: unset; */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .whs-react__feature-container .feature-container {
+        flex: 1;
+        min-width: 33rem;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .whs-react__feature-container .feature-container {
+        width: 100%;
+    }
+}

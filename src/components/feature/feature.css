@@ -1,0 +1,40 @@
+.feature-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 1rem;
+    flex: 1;
+    min-width: 26rem;
+}
+
+.feature-container__title {
+    flex: 1;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.feature-container__title div {
+    position: absolute;
+    background: linear-gradient(100deg, rgba(174, 103, 175, 1) 30%, rgba(255, 138, 113, 1) 60%);
+    width: 8rem;
+    height: 0.2rem;
+    top: -1rem;
+    left: 0;
+}
+
+.feature-container__title h2 {
+    font-family: var(--font-family);
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    line-height: 2.4rem;
+    max-width: 28rem;
+
+}
+
+.feature-container__caption {
+    display: flex;
+    flex: 2;
+    max-width: 38rem;
+}
